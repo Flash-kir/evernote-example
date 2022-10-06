@@ -36,7 +36,7 @@
 
 Для запуска на продуктовом сервере потребуется выполнить одно из действий:
 - активировать ключ разработчика через [форму](https://dev.evernote.com/support/faq.php#). Ссылка на [документацию](https://dev.evernote.com/support/faq.php#activatekey) по копированию ключа с тестового на продуктовый сервер.
-- либо (зарегистрироваться)[https://www.evernote.com/Registration.action?analyticsLoginOrigin=login_action] на продуктовом сервере и получить ключ разработчика (там)[https://www.evernote.com/api/DeveloperToken.action]
+- либо [зарегистрироваться](https://www.evernote.com/Registration.action?analyticsLoginOrigin=login_action) на продуктовом сервере и получить ключ разработчика [там](https://www.evernote.com/api/DeveloperToken.action)
 
 ## config.py
 
