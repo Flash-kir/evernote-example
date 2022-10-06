@@ -29,7 +29,7 @@
 - EVERNOTE_CONSUMER_KEY - имя пользователя, полученное в пункте 1.
 - EVERNOTE_CONSUMER_SECRET - секретный ключ, полученный в пункте 1.
 - EVERNOTE_PERSONAL_TOKEN - ключ разработчика, полученный в пункте 2 вида 'S=s1:U=96c33:E=18afbbd6118:C=183a40c3518:P=1cd:A=en-devtoken:V=2:H=92...'
-- JOURNAL_TEMPLATE_NOTE_GUID - идентификационный номер шаблона, выбираемого по [ссылке](https://evernote.com/templates?collection=for-life) вида: '801a6f37-d537-4060-a338-1b145bbcd98f'
+- JOURNAL_TEMPLATE_NOTE_GUID - идентификационный номер заметки, с которой будет сниматься копия, вида: '801a6f37-d537-4060-a338-1b145bbcd98f'
 - JOURNAL_NOTEBOOK_GUID - идентификационный номер блокнота, получаемый при выполнении `list_notebooks.py` '5363d8a6-e2b7-482d-a2ca-a771b61a581d'
 - INBOX_NOTEBOOK_GUID=''
 - IS_SANDBOX - если работа ведется с тестовым сервером `sandbox.evernote.com` присваиваем `True`, если на продуктовом сервере `evernote.com` присваиваем `False`.
@@ -63,8 +63,7 @@
 ## add_note2journal.py
 
 Программа копирует шаблон, `guid` которого указан в настройках в параметре `JOURNAL_TEMPLATE_NOTE_GUID`, и сохраняет запись в новую заметку в блокноте, `guid` которого указан в настройках в параметре `JOURNAL_NOTEBOOK_GUID`.
-Программа выполняется только на продуктовом сервере, тк шаблоны не доступны для сервера разработки.
-При разработке можно указать `guid` любой созданной заметки и создастся ее копия, но будет выведено сообщение об ошибке декодирования шаблона.
+При разработке можно указать `guid` любой созданной заметки и создастся ее копия.
 
     Traceback (most recent call last):
       File "add_note2journal.py", line 58, in <module>
