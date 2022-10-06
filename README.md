@@ -29,7 +29,7 @@
 - EVERNOTE_CONSUMER_KEY - имя пользователя, полученное в пункте 1.
 - EVERNOTE_CONSUMER_SECRET - секретный ключ, полученный в пункте 1.
 - EVERNOTE_PERSONAL_TOKEN - ключ разработчика, полученный в пункте 2 вида 'S=s1:U=96c33:E=18afbbd6118:C=183a40c3518:P=1cd:A=en-devtoken:V=2:H=92...'
-- JOURNAL_TEMPLATE_NOTE_GUID - идентификационный номер заметки, с которой будет сниматься копия, вида: '801a6f37-d537-4060-a338-1b145bbcd98f'
+- JOURNAL_TEMPLATE_NOTE_GUID - идентификационный номер заметки, с которой будет сниматься копия, вида: '801a6f37-d537-4060-a338-1b145bbcd98f', может быть получен при выполнении `dump_inbox.py`
 - JOURNAL_NOTEBOOK_GUID - идентификационный номер блокнота, получаемый при выполнении `list_notebooks.py` '5363d8a6-e2b7-482d-a2ca-a771b61a581d'
 - INBOX_NOTEBOOK_GUID=''
 - IS_SANDBOX - если работа ведется с тестовым сервером `sandbox.evernote.com` присваиваем `True`, если на продуктовом сервере `evernote.com` присваиваем `False`.
