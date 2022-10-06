@@ -34,8 +34,9 @@
 - INBOX_NOTEBOOK_GUID=''
 - IS_SANDBOX - если работа ведется с тестовым сервером `sandbox.evernote.com` присваиваем `True`, если на продуктовом сервере `evernote.com` присваиваем `False`.
 
-Для запуска на продуктовом сервере потребуется активировать ключ разработчика через [форму](https://dev.evernote.com/support/faq.php#). 
-Ссылка на [документацию](https://dev.evernote.com/support/faq.php#activatekey) по копированию ключа с тестового на продуктовый сервер.
+Для запуска на продуктовом сервере потребуется выполнить одно из действий:
+- активировать ключ разработчика через [форму](https://dev.evernote.com/support/faq.php#). Ссылка на [документацию](https://dev.evernote.com/support/faq.php#activatekey) по копированию ключа с тестового на продуктовый сервер.
+- либо (зарегистрироваться)[https://www.evernote.com/Registration.action?analyticsLoginOrigin=login_action] на продуктовом сервере и получить ключ разработчика (там)[https://www.evernote.com/api/DeveloperToken.action]
 
 ## config.py
 
