@@ -54,9 +54,8 @@ if __name__ == '__main__':
     print(json.dumps(context, ensure_ascii=False, indent=4))
 
     new_note = noteStore.copyNote(config.JOURNAL_TEMPLATE_NOTE_GUID, config.JOURNAL_NOTEBOOK_GUID)
-    utitle_without_comment = new_note.title.decode('utf8').split('#', 1)[0]
-    utitle = utitle_without_comment.strip().format(**context)
-    new_note.title = utitle.encode('utf8')
+    utitle_without_comment = new_note.title.split('#', 1)[0]
+    new_note.title = utitle_without_comment.strip().format(**context)
     noteStore.updateNote(new_note)
     
     print(u'Note created: %s' % utitle)
